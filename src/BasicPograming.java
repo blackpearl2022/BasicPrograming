@@ -1,17 +1,24 @@
 import java.util.Scanner;
 
 public class BasicPograming {
+
     public static void main(String[] args) {
-            Scanner sc = new Scanner(System.in);
-            System.out.println("Enter value of n");
-            int n = sc.nextInt();
-            if (n > 0 && n < 31) {
-                for (int i = 1; i <= n; i++) {
-                    System.out.println(i + " " + Math.pow(2, i));
-                }
-            }
-                else {
-                System.out.println("Exceed max value, please enter lower value");
-                 }
-        }
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the value of n");
+        int n = sc.nextInt();
+        System.out.println(Harmonic(n));
     }
+    public static double Harmonic(int n) {
+        double sum = 0;
+        if (n > 0) {
+            for (double i = 1; i <= n; i++) {
+                sum += (1 / i);
+            }
+
+        }
+        else {
+            System.out.println("Enter a positive number:");
+        }
+        return sum;
+    }
+}
