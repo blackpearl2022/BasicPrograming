@@ -2,20 +2,15 @@ import java.util.Scanner;
 
 public class BasicPograming {
 
-    public static void main(String[] args) {
-
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter number");
-        int n = sc.nextInt();
-        System.out.println("Prime factors for the given numbers:");
-        for(int i=2;i<=n;i++)
-        {
-            while(n%i==0)
-            {
-                n=n/i;
-                System.out.println(i+"");
-            }
+    public static void main (String[]args){
+            Scanner sc = new Scanner(System.in);
+            System.out.println("Enter 1st number:");
+            int num1 = sc.nextInt();
+            System.out.println("Enter 2nd number:");
+            int num2 = sc.nextInt();
+            int quotient = (num1 / num2);
+            int remainder = (num1 % num2);
+            System.out.println("Quotient  : " + quotient);
+            System.out.println("Remainder : " + remainder);
         }
-
     }
-}
