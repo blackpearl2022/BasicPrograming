@@ -2,26 +2,22 @@ import java.util.Scanner;
 
 public class BasicPograming {
 
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter 3 number :");
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int c = sc.nextInt();
+        int large;
 
-            Scanner sc = new Scanner(System.in);
-            System.out.println("Enter an Alphabet:");
-
-            char ch = sc.next().charAt(0);
-
-            if (ch == 'a' || ch == 'A')
-                System.out.println("It is a vowel");
-            else if (ch == 'e' || ch == 'E')
-                System.out.println("It is a vowel");
-            else if (ch == 'i' || ch == 'I')
-                System.out.println("It is a vowel");
-            else if (ch == 'o' || ch == 'O')
-                System.out.println("It is a vowel");
-            else if (ch == 'u' || ch == 'U')
-                System.out.println("It is a vowel");
-            else
-                System.out.println("It is a consonant");
-
-        }
+        if (a>b)
+            large = a;
+        else
+            large = b;
+        if (c>large)
+            large = c;
+        System.out.println("Largest number among 3 numbers :"+ large);
+    }
     }
 
